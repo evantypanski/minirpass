@@ -16,8 +16,8 @@
     // internet connectivity.
     .dependencies = .{
         .minir = .{
-            .url = "git+https://github.com/evantypanski/minir/#77ee178680a9819160b918ad52b05be37611b933",
-            .hash = "1220aad0da00be3e43df40f81051da89ca4658bc7b7cddf660b9c5deaacdc76ef9e8",
+            .url = "git+https://github.com/evantypanski/minir/#31e334df31539c834f6d6b6914f6a7aa9f616e3b",
+            .hash = "12206b8a0ff4ef5c730faac60875f8b68ddd83d1efb726c1b4a2e01420ebfd997135",
         },
     },
     .paths = .{
