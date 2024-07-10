@@ -3,7 +3,7 @@ const std = @import("std");
 const minir = @import("minir");
 const Driver = minir.Driver;
 const Options = minir.options.Options;
-const SimplePass = @import("simple_pass.zig").SimplePass;
+const MySimplePass = @import("simple_pass.zig").MySimplePass;
 const VisitorPass = @import("visitor_pass.zig").VisitorPass;
 
 pub fn main() !void {
@@ -26,5 +26,5 @@ pub fn main() !void {
         },
     };
 
-    try Driver.init(gpa, stdout).driveWithExtraPasses(cmd, &[_]type{SimplePass, VisitorPass});
+    try Driver.init(gpa, stdout).driveWithExtraPasses(cmd, &[_]type{MySimplePass, VisitorPass});
 }
