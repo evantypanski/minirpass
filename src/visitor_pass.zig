@@ -6,9 +6,9 @@ const std = @import("std");
 const Allocator = std.mem.Allocator;
 
 const minir = @import("minir");
-const Modifier = minir.pass.Modifier;
-const Program = minir.Program;
-const IrVisitor = minir.IrVisitor;
+const Modifier = minir.ir.passes.Modifier;
+const Program = minir.ir.nodes.Program;
+const IrVisitor = minir.ir.passes.IrVisitor;
 
 pub const VisitorPass = Modifier(
     VisitorPassImpl, VisitorPassImpl.Error, &[_]type{},

@@ -2,8 +2,8 @@
 //! a pass doesn't even have to initialize anything!
 const std = @import("std");
 
-const SimplePass = @import("minir").pass.SimplePass;
-const Program = @import("minir").Program;
+const SimplePass = @import("minir").ir.passes.SimplePass;
+const Program = @import("minir").ir.nodes.Program;
 
 fn run(_: *void, _: *const Program) anyerror!void {
     std.debug.print("In simple pass!\n\n", .{});
